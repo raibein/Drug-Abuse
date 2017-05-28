@@ -1,0 +1,848 @@
+<HTML>
+<STYLE TYPE="TEXT/CSS">
+TABLE.UML {
+	BORDER-WIDTH: 1PX 1PX 1PX 1PX;
+	BORDER-SPACING: 0PX;
+	BORDER-STYLE: SOLID SOLID SOLID SOLID;
+	BORDER-COLOR: BLACK BLACK BLACK BLACK;
+	BORDER-COLLAPSE: SEPARATE;
+	BACKGROUND-COLOR: WHITE;
+}
+
+CODE {
+	FONT-FAMILY: ARIAL;
+	FONT-SIZE: 80%;
+}
+
+PRE {
+	FONT-FAMILY: ARIAL;
+	FONT-SIZE: 80%;
+}
+
+H1 {
+	FONT-FAMILY: ARIAL;
+	FONT-SIZE: 144%;
+	FONT-STYLE: BOLD;
+}
+
+H2 {
+	FONT-FAMILY: ARIAL;
+	FONT-SIZE: 120%;
+	FONT-STYLE: BOLD;
+}
+
+H3 {
+	FONT-FAMILY: ARIAL;
+	FONT-SIZE: 100%;
+	FONT-STYLE: BOLD;
+}
+
+</STYLE>
+<HEAD>
+<TITLE>
+DrugAbuse</TITLE>
+</HEAD>
+<BODY>
+<H1>DrugAbuse</H1>
+<B>author&#40;s&#41;: </B>Raben Shrestha
+<BR>
+<P>
+
+</P>
+
+<BR>
+<HR>
+<H2>Workspace</H2>
+<PRE>AllInfections select: [:x | x name=&apos;Death&apos;]
+
+AllInfections select: [:x | x highInfected]
+AllInfections select: [:x | x lessInfected]
+AllInfections select: [:x | x mediumInfected]
+
+
+
+AllDrugs select: [:drug | drug type = &apos;Natural&apos;]
+AllDrugs select: [:drug | drug type = &apos;Plant&apos;]
+AllDrugs select: [:drug | drug type = &apos;Chemical&apos;]
+
+
+
+AllCountries select: [: x | x drugTrafficklingCountry]
+
+
+
+AllTreatments select: [:treat | treat familySupport]
+AllTreatments select: [:treat | treat mecicalCare]
+AllTreatments select: [:treat | treat selfHeal]
+
+
+Formula select: [:f | f herb]
+Formula select: [:f | f mostHarm]</PRE>
+<H4>Workspace Objects</H4>
+<UL>
+
+<BR>
+<LI>
+<CODE>
+AllCountries :Set
+</CODE>
+<LI>
+<CODE>
+AllDrugs :Set
+</CODE>
+<LI>
+<CODE>
+AllInfections :Set
+</CODE>
+<LI>
+<CODE>
+AllTreatments :Set
+</CODE>
+<LI>
+<CODE>
+Formula :Set
+</CODE>
+</UL>
+
+<BR>
+<HR>
+<H2>Script</H2>
+<PRE>&quot;Note that variables begining with uppercase letter will be moved into the workspace pool.&quot;
+
+AllDrugs := Set new.
+AllInfections := Set new.
+AllTreatments := Set new.
+Formula := Set new.
+AllCountries := Set new.
+
+
+
+
+d1 := Drug new.
+d1 name: &apos;Hashish&apos;.
+d1 type: &apos;Plant&apos;.
+
+d2 := Drug new.
+d2 name: &apos;Cocaine&apos;.
+d2 type: &apos;Chemical&apos;.
+
+d3 := Drug new.
+d3 name: &apos;Heroin&apos;.
+d3 type: &apos;Chemical&apos;.
+
+d4 := Drug new.
+d4 name: &apos;Kratom&apos;.
+d4 type: &apos;Natural&apos;.
+
+d5 := Drug new.
+d5 name: &apos;Cannabis&apos;.
+d5 type: &apos;Natural&apos;.
+
+
+i1 := Infection new.
+i1 name: &apos;Sweating&apos;.
+i1 gender: &apos;Both MaleFemale&apos;.
+
+i2 := Infection new.
+i2 name: &apos;Loss of Consciousness&apos;.
+i2 gender: &apos;Both Male Female&apos;.
+
+i3 := Infection new.
+i3 name: &apos;Comma&apos;.
+i3 gender: &apos;Both Male Female&apos;.
+
+i4 := Infection new.
+i4 name: &apos;Nausea&apos;.
+i4 gender: &apos;Both Male Female&apos;.
+
+i5 := Infection new.
+i5 name: &apos;Hallucinations&apos;.
+i5 gender: &apos;Both Male Female&apos;.
+
+i6 := Infection new.
+i6 name: &apos;Cancer&apos;.
+i6 gender: &apos;Both Male Female&apos;.
+
+i7 := Infection new.
+i7 name: &apos;Intense Feeling&apos;.
+i7 gender: &apos;Both Male Female&apos;.
+
+i8 := Infection new.
+i8 name: &apos;Death&apos;.
+i8 gender: &apos;Both Male Female&apos;.
+
+i9 := Infection new.
+i9 name: &apos;Muscle Spasms&apos;.
+i9 gender: &apos;Both Male Female&apos;.
+
+i10 := Infection new.
+i10 name: &apos;Depression&apos;.
+i10 gender: &apos;Both Male Female&apos;.
+
+i11 := Infection new.
+i11 name: &apos;Breathing Problem&apos;.
+i11 gender: &apos;Both Male Female&apos;.
+
+i12 := Infection new.
+i12 name: &apos;Hepatitis&apos;.
+i12 gender: &apos;Both Male Female&apos;.
+
+i13 := Infection new.
+i13 name: &apos;Dizziness&apos;.
+i13 gender: &apos;Both Male Female&apos;.
+
+
+t1 := Treatment new.
+t1 name: &apos;Cognitive Behavioral Therapy&apos;.
+
+t2 := Treatment new.
+t2 name: &apos;Motivational Enhancement Therapy&apos;.
+
+t3 := Treatment new.
+t3 name: &apos;Family Based Treatment&apos;.
+
+t4 := Treatment new.
+t4 name: &apos;Nafazodone&apos;.
+
+t5 := Treatment new.
+t5 name: &apos;Fluoxetine&apos;.
+
+t6 := Treatment new.
+t6 name: &apos;Rehabilitation&apos;.
+
+t7 := Treatment new.
+t7 name: &apos;Detoxification&apos;.
+
+t8 := Treatment new.
+t8 name: &apos;Narcotics Anonymous&apos;.
+
+t9 := Treatment new.
+t9 name: &apos;Individual Counselling&apos;.
+
+t10 := Treatment new.
+t10 name: &apos;Self-help&apos;.
+
+
+
+c1 := Chemical new.
+c1 molecular: &apos;C21H30O2&apos;.
+
+c2 := Chemical new.
+c2 molecular: &apos;C17H21NO4&apos;.
+
+c3 := Chemical new.
+c3 molecular: &apos;C21H23N05&apos;.
+
+c4 := Chemical new.
+c4 molecular: &apos;C23H30N205&apos;.
+
+c5 := Chemical new.
+c5 molecular: &apos;C21H30O2&apos;.
+
+
+
+cu1 := Country new.
+cu1 name: &apos;Afghanistan&apos;.
+
+cu2 := Country new.
+cu2 name: &apos;Colombia&apos;.
+
+cu3 := Country new.
+cu3 name: &apos;Thailand&apos;.
+
+
+
+
+
+t1 infection: d5; infection: d1.
+t2 infection: d5.
+t3 infection: d5; infection: d1; infection: d3.
+t4 infection: d5.
+t5 infection: d5.
+t6 infection: d2.
+t7 infection: d2; infection: d3.
+t8 infection: d3.
+t9 infection: d1.
+t10 infection: d1.
+
+
+c1 reaction: d1.
+c2 reaction: d2.
+c3 reaction: d3.
+c4 reaction: d4.
+c5 reaction: d5.
+
+
+
+d3 infection: i3.
+d4 infection: i12.
+d5 infection: i10.
+d1 infection: i10.
+d2 infection: i4.
+
+
+
+i3 overdose: d1.
+i4 overdose: d4.
+i12 overdose: d4.
+i3 overdose: d3.
+i1 overdose: d3.
+i3 overdose: d3.
+i6 overdose: d3.
+i11 overdose: d3.
+i7 overdose: d3.
+i8 overdose: d2.
+i2 overdose: d5.
+
+
+d1 produce: cu1.
+d2 produce: cu2.
+d3 produce: cu1.
+d4 produce: cu3.
+d5 produce: cu1.
+
+
+
+AllDrugs add: d1.
+AllDrugs add: d2.
+AllDrugs add: d3.
+AllDrugs add: d4.
+AllDrugs add: d5.
+
+
+AllInfections add: i1.
+AllInfections add: i2.
+AllInfections add: i3.
+AllInfections add: i4.
+AllInfections add: i5.
+AllInfections add: i6.
+AllInfections add: i7.
+AllInfections add: i8.
+AllInfections add: i9.
+AllInfections add: i10.
+AllInfections add: i11.
+AllInfections add: i12.
+AllInfections add: i13.
+
+
+AllTreatments add: t1.
+AllTreatments add: t2.
+AllTreatments add: t3.
+AllTreatments add: t4.
+AllTreatments add: t5.
+AllTreatments add: t6.
+AllTreatments add: t7.
+AllTreatments add: t8.
+AllTreatments add: t9.
+AllTreatments add: t10.
+
+
+Formula add: c1.
+Formula add: c2.
+Formula add: c3.
+Formula add: c4.
+Formula add: c5.
+
+
+AllCountries add: cu1.
+AllCountries add: cu2.
+AllCountries add: cu3.</PRE>
+<HR>
+<H2>Diagram</H2>
+<IMG SRC="aaa.gif">
+<HR>
+<H2>Classes</H2>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="0" WIDTH=100%>
+<TR>
+<TD WIDTH=20%>
+<TABLE WIDTH=95% BORDER="1" CELLSPACING="0" BORDERCOLOR=BLACK>
+<TR><TD><BIG>
+<B><CODE>
+Infection
+</CODE></B>
+</BIG></TD></TR>
+<TR><TD>
+<I><SMALL>instance variables</SMALL></I><BR>
+<CODE>
+gender :String
+</CODE>
+<BR>
+<CODE>
+name :String
+</CODE>
+<BR>
+<CODE>
+overdose :Object
+</CODE>
+<BR>
+</TD></TR>
+<TR><TD>
+<I><SMALL>methods</SMALL></I><BR>
+<CODE>
+gender
+</CODE>
+<BR>
+<CODE>
+gender:
+</CODE>
+<BR>
+<CODE>
+highInfected
+</CODE>
+<BR>
+<CODE>
+initialize
+</CODE>
+<BR>
+<CODE>
+lessInfected
+</CODE>
+<BR>
+<CODE>
+mediumInfected
+</CODE>
+<BR>
+<CODE>
+name
+</CODE>
+<BR>
+<CODE>
+name:
+</CODE>
+<BR>
+<CODE>
+overdose
+</CODE>
+<BR>
+<CODE>
+overdose:
+</CODE>
+<BR>
+</TD></TR>
+</TABLE>
+</TD>
+<TD VALIGN="TOP">
+<P>
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<H4>code of non-accessing methods: </H4>
+<UL>
+<LI>
+<B><CODE>
+highInfected
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Comma&apos; &apos;Loss of Consciousness&apos; &apos;Death&apos; &apos;Cancer&apos; &apos;Hallucinations&apos; &apos;Death&apos;&#41;
+		includes: name</PRE>
+<LI>
+<B><CODE>
+initialize
+</CODE></B>
+<PRE>
+&quot;generated by Daskalos&quot;
+
+     super initialize.
+     name := nil.
+     gender := nil.
+     overdose := nil.</PRE>
+<LI>
+<B><CODE>
+lessInfected
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Sweating&apos; &apos;Nausea&apos; &apos;Dizziness&apos;&#41; includes: name</PRE>
+<LI>
+<B><CODE>
+mediumInfected
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Hepatitis&apos; &apos;Depression&apos; &apos;Loss of Consciousness&apos; &apos;Muscle Spasms&apos;&#41;
+		includes: name</PRE>
+</UL>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="0" WIDTH=100%>
+<TR>
+<TD WIDTH=20%>
+<TABLE WIDTH=95% BORDER="1" CELLSPACING="0" BORDERCOLOR=BLACK>
+<TR><TD><BIG>
+<B><CODE>
+Treatment
+</CODE></B>
+</BIG></TD></TR>
+<TR><TD>
+<I><SMALL>instance variables</SMALL></I><BR>
+<CODE>
+infection :Object
+</CODE>
+<BR>
+<CODE>
+name :String
+</CODE>
+<BR>
+</TD></TR>
+<TR><TD>
+<I><SMALL>methods</SMALL></I><BR>
+<CODE>
+familySupport
+</CODE>
+<BR>
+<CODE>
+infection
+</CODE>
+<BR>
+<CODE>
+infection:
+</CODE>
+<BR>
+<CODE>
+initialize
+</CODE>
+<BR>
+<CODE>
+mecicalCare
+</CODE>
+<BR>
+<CODE>
+name
+</CODE>
+<BR>
+<CODE>
+name:
+</CODE>
+<BR>
+<CODE>
+selfHeal
+</CODE>
+<BR>
+</TD></TR>
+</TABLE>
+</TD>
+<TD VALIGN="TOP">
+<P>
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<H4>code of non-accessing methods: </H4>
+<UL>
+<LI>
+<B><CODE>
+familySupport
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Motivational Enhancement Therapy&apos; &apos;Family Based Treatment&apos; &apos;Cognitive Behavioral Therapy&apos;&#41;
+		includes: name</PRE>
+<LI>
+<B><CODE>
+initialize
+</CODE></B>
+<PRE>
+&quot;generated by Daskalos&quot;
+
+     super initialize.
+     name := nil.
+     infection := nil.</PRE>
+<LI>
+<B><CODE>
+mecicalCare
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Nafazodone&apos; &apos;Detoxification&apos; &apos;Fluoxetine&apos; &apos;Narcotics Anonymous&apos; &apos;Rehabilitation&apos;&#41;
+		includes: name</PRE>
+<LI>
+<B><CODE>
+selfHeal
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;Motivational Enhancement Therapy&apos; &apos;Individual Counselling&apos; &apos;Self-help&apos;&#41;
+		includes: name</PRE>
+</UL>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="0" WIDTH=100%>
+<TR>
+<TD WIDTH=20%>
+<TABLE WIDTH=95% BORDER="1" CELLSPACING="0" BORDERCOLOR=BLACK>
+<TR><TD><BIG>
+<B><CODE>
+Chemical
+</CODE></B>
+</BIG></TD></TR>
+<TR><TD>
+<I><SMALL>instance variables</SMALL></I><BR>
+<CODE>
+molecular :String
+</CODE>
+<BR>
+<CODE>
+reaction :Object
+</CODE>
+<BR>
+</TD></TR>
+<TR><TD>
+<I><SMALL>methods</SMALL></I><BR>
+<CODE>
+herb
+</CODE>
+<BR>
+<CODE>
+initialize
+</CODE>
+<BR>
+<CODE>
+molecular
+</CODE>
+<BR>
+<CODE>
+molecular:
+</CODE>
+<BR>
+<CODE>
+mostHarm
+</CODE>
+<BR>
+<CODE>
+reaction
+</CODE>
+<BR>
+<CODE>
+reaction:
+</CODE>
+<BR>
+</TD></TR>
+</TABLE>
+</TD>
+<TD VALIGN="TOP">
+<P>
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<H4>code of non-accessing methods: </H4>
+<UL>
+<LI>
+<B><CODE>
+herb
+</CODE></B>
+<PRE>
+
+	^true ifTrue: [&#40;molecular = &apos;C23H30N205&apos; | molecular&#41; = &apos;C21H30O2&apos;]</PRE>
+<LI>
+<B><CODE>
+initialize
+</CODE></B>
+<PRE>
+&quot;generated by Daskalos&quot;
+
+     super initialize.
+     molecular := nil.
+     reaction := nil.</PRE>
+<LI>
+<B><CODE>
+mostHarm
+</CODE></B>
+<PRE>
+
+	^&#35;&#40;&apos;C21H23N05&apos; &apos;C17H21NO4&apos;&#41; includes: molecular</PRE>
+</UL>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="0" WIDTH=100%>
+<TR>
+<TD WIDTH=20%>
+<TABLE WIDTH=95% BORDER="1" CELLSPACING="0" BORDERCOLOR=BLACK>
+<TR><TD><BIG>
+<B><CODE>
+Country
+</CODE></B>
+</BIG></TD></TR>
+<TR><TD>
+<I><SMALL>instance variables</SMALL></I><BR>
+<CODE>
+name :String
+</CODE>
+<BR>
+</TD></TR>
+<TR><TD>
+<I><SMALL>methods</SMALL></I><BR>
+<CODE>
+drugTrafficklingCountry
+</CODE>
+<BR>
+<CODE>
+initialize
+</CODE>
+<BR>
+<CODE>
+name
+</CODE>
+<BR>
+<CODE>
+name:
+</CODE>
+<BR>
+<CODE>
+numCountries
+</CODE>
+<BR>
+</TD></TR>
+</TABLE>
+</TD>
+<TD VALIGN="TOP">
+<P>
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<H4>code of non-accessing methods: </H4>
+<UL>
+<LI>
+<B><CODE>
+drugTrafficklingCountry
+</CODE></B>
+<PRE>
+
+	^self numCountries size &gt; 1</PRE>
+<LI>
+<B><CODE>
+initialize
+</CODE></B>
+<PRE>
+&quot;generated by Daskalos&quot;
+
+     super initialize.
+     name := nil.</PRE>
+<LI>
+<B><CODE>
+numCountries
+</CODE></B>
+<PRE>
+
+	^Drug allInstances select: [:x | x produce = self]</PRE>
+</UL>
+<TABLE BORDER="0" CELLPADDING="3" CELLSPACING="0" WIDTH=100%>
+<TR>
+<TD WIDTH=20%>
+<TABLE WIDTH=95% BORDER="1" CELLSPACING="0" BORDERCOLOR=BLACK>
+<TR><TD><BIG>
+<B><CODE>
+Drug
+</CODE></B>
+</BIG></TD></TR>
+<TR><TD>
+<I><SMALL>instance variables</SMALL></I><BR>
+<CODE>
+infection :Object
+</CODE>
+<BR>
+<CODE>
+name :String
+</CODE>
+<BR>
+<CODE>
+produce :Object
+</CODE>
+<BR>
+<CODE>
+type :String
+</CODE>
+<BR>
+</TD></TR>
+<TR><TD>
+<I><SMALL>methods</SMALL></I><BR>
+<CODE>
+infection
+</CODE>
+<BR>
+<CODE>
+infection:
+</CODE>
+<BR>
+<CODE>
+initialize
+</CODE>
+<BR>
+<CODE>
+name
+</CODE>
+<BR>
+<CODE>
+name:
+</CODE>
+<BR>
+<CODE>
+produce
+</CODE>
+<BR>
+<CODE>
+produce:
+</CODE>
+<BR>
+<CODE>
+traffickling
+</CODE>
+<BR>
+<CODE>
+type
+</CODE>
+<BR>
+<CODE>
+type:
+</CODE>
+<BR>
+</TD></TR>
+</TABLE>
+</TD>
+<TD VALIGN="TOP">
+<P>
+
+</P>
+</TD>
+</TR>
+</TABLE>
+<H4>code of non-accessing methods: </H4>
+<UL>
+<LI>
+<B><CODE>
+initialize
+</CODE></B>
+<PRE>
+&quot;generated by Daskalos&quot;
+
+     super initialize.
+     name := nil.
+     type := nil.
+     infection := nil.
+     produce := nil.</PRE>
+<LI>
+<B><CODE>
+traffickling
+</CODE></B>
+<PRE>
+
+	^produce name</PRE>
+</UL>
+<HR>
+<H2>Links</H2>
+<A HREF="aaa.xml">Data file</A> and 
+<A HREF="aaa.st">class source</A>.
+
+<BR>
+
+<BR>
+<CODE>
+Generated by Daskalos - Object Modeling Tutor &#40;C&#41; 2006 V. Merunka
+</CODE>
+
+<BR>
+<CODE>
+May 21&#44; 2017
+</CODE>
+</BODY></HTML>

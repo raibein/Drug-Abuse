@@ -1,0 +1,983 @@
+<sixx sixx.version="1.0">
+	<sixx.object sixx.id="0" sixx.type="DaskalosProject" >
+		<sixx.object sixx.id="1" sixx.name="name" sixx.type="String" >DrugAbuse</sixx.object>
+		<sixx.object sixx.id="2" sixx.name="author" sixx.type="String" >Raben Shrestha</sixx.object>
+		<sixx.object sixx.id="3" sixx.name="description" sixx.type="String" ></sixx.object>
+		<sixx.object sixx.id="4" sixx.name="workspaceVariables" sixx.type="Dictionary" >
+			<sixx.object sixx.id="5" sixx.type="Association" >
+				<sixx.object sixx.id="6" sixx.name="key" sixx.type="Symbol" >AllInfections</sixx.object>
+				<sixx.object sixx.id="7" sixx.name="value" sixx.type="Set" >
+					<sixx.object sixx.id="8" sixx.type="Infection" >
+						<sixx.object sixx.id="9" sixx.name="name" sixx.type="String" >Cancer</sixx.object>
+						<sixx.object sixx.id="10" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+						<sixx.object sixx.id="11" sixx.name="overdose" sixx.type="Drug" >
+							<sixx.object sixx.id="12" sixx.name="name" sixx.type="String" >Heroin</sixx.object>
+							<sixx.object sixx.id="13" sixx.name="type" sixx.type="String" >Chemical</sixx.object>
+							<sixx.object sixx.id="14" sixx.name="infection" sixx.type="Infection" >
+								<sixx.object sixx.id="15" sixx.name="name" sixx.type="String" >Comma</sixx.object>
+								<sixx.object sixx.id="16" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+								<sixx.object sixx.name="overdose" sixx.idref="11" />
+							</sixx.object>
+							<sixx.object sixx.id="17" sixx.name="produce" sixx.type="Country" >
+								<sixx.object sixx.id="18" sixx.name="name" sixx.type="String" >Afghanistan</sixx.object>
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="19" sixx.type="Infection" >
+						<sixx.object sixx.id="20" sixx.name="name" sixx.type="String" >Loss of Consciousness</sixx.object>
+						<sixx.object sixx.id="21" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+						<sixx.object sixx.id="22" sixx.name="overdose" sixx.type="Drug" >
+							<sixx.object sixx.id="23" sixx.name="name" sixx.type="String" >Cannabis</sixx.object>
+							<sixx.object sixx.id="24" sixx.name="type" sixx.type="String" >Natural</sixx.object>
+							<sixx.object sixx.id="25" sixx.name="infection" sixx.type="Infection" >
+								<sixx.object sixx.id="26" sixx.name="name" sixx.type="String" >Depression</sixx.object>
+								<sixx.object sixx.id="27" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+							</sixx.object>
+							<sixx.object sixx.name="produce" sixx.idref="17" />
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.idref="25" />
+					<sixx.object sixx.idref="14" />
+					<sixx.object sixx.id="28" sixx.type="Infection" >
+						<sixx.object sixx.id="29" sixx.name="name" sixx.type="String" >Intense Feeling</sixx.object>
+						<sixx.object sixx.id="30" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+						<sixx.object sixx.name="overdose" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="31" sixx.type="Infection" >
+						<sixx.object sixx.id="32" sixx.name="name" sixx.type="String" >Sweating</sixx.object>
+						<sixx.object sixx.id="33" sixx.name="gender" sixx.type="String" >Both MaleFemale</sixx.object>
+						<sixx.object sixx.name="overdose" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="34" sixx.type="Infection" >
+						<sixx.object sixx.id="35" sixx.name="name" sixx.type="String" >Death</sixx.object>
+						<sixx.object sixx.id="36" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+						<sixx.object sixx.id="37" sixx.name="overdose" sixx.type="Drug" >
+							<sixx.object sixx.id="38" sixx.name="name" sixx.type="String" >Cocaine</sixx.object>
+							<sixx.object sixx.id="39" sixx.name="type" sixx.type="String" >Chemical</sixx.object>
+							<sixx.object sixx.id="40" sixx.name="infection" sixx.type="Infection" >
+								<sixx.object sixx.id="41" sixx.name="name" sixx.type="String" >Nausea</sixx.object>
+								<sixx.object sixx.id="42" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+								<sixx.object sixx.id="43" sixx.name="overdose" sixx.type="Drug" >
+									<sixx.object sixx.id="44" sixx.name="name" sixx.type="String" >Kratom</sixx.object>
+									<sixx.object sixx.id="45" sixx.name="type" sixx.type="String" >Natural</sixx.object>
+									<sixx.object sixx.id="46" sixx.name="infection" sixx.type="Infection" >
+										<sixx.object sixx.id="47" sixx.name="name" sixx.type="String" >Hepatitis</sixx.object>
+										<sixx.object sixx.id="48" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+										<sixx.object sixx.name="overdose" sixx.idref="43" />
+									</sixx.object>
+									<sixx.object sixx.id="49" sixx.name="produce" sixx.type="Country" >
+										<sixx.object sixx.id="50" sixx.name="name" sixx.type="String" >Thailand</sixx.object>
+									</sixx.object>
+								</sixx.object>
+							</sixx.object>
+							<sixx.object sixx.id="51" sixx.name="produce" sixx.type="Country" >
+								<sixx.object sixx.id="52" sixx.name="name" sixx.type="String" >Colombia</sixx.object>
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="53" sixx.type="Infection" >
+						<sixx.object sixx.id="54" sixx.name="name" sixx.type="String" >Dizziness</sixx.object>
+						<sixx.object sixx.id="55" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.idref="40" />
+					<sixx.object sixx.id="56" sixx.type="Infection" >
+						<sixx.object sixx.id="57" sixx.name="name" sixx.type="String" >Hallucinations</sixx.object>
+						<sixx.object sixx.id="58" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="59" sixx.type="Infection" >
+						<sixx.object sixx.id="60" sixx.name="name" sixx.type="String" >Muscle Spasms</sixx.object>
+						<sixx.object sixx.id="61" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.idref="46" />
+					<sixx.object sixx.id="62" sixx.type="Infection" >
+						<sixx.object sixx.id="63" sixx.name="name" sixx.type="String" >Breathing Problem</sixx.object>
+						<sixx.object sixx.id="64" sixx.name="gender" sixx.type="String" >Both Male Female</sixx.object>
+						<sixx.object sixx.name="overdose" sixx.idref="11" />
+					</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="65" sixx.type="Association" >
+				<sixx.object sixx.id="66" sixx.name="key" sixx.type="Symbol" >AllCountries</sixx.object>
+				<sixx.object sixx.id="67" sixx.name="value" sixx.type="Set" >
+					<sixx.object sixx.idref="51" />
+					<sixx.object sixx.idref="17" />
+					<sixx.object sixx.idref="49" />
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="68" sixx.type="Association" >
+				<sixx.object sixx.id="69" sixx.name="key" sixx.type="Symbol" >AllTreatments</sixx.object>
+				<sixx.object sixx.id="70" sixx.name="value" sixx.type="Set" >
+					<sixx.object sixx.id="71" sixx.type="Treatment" >
+						<sixx.object sixx.id="72" sixx.name="name" sixx.type="String" >Cognitive Behavioral Therapy</sixx.object>
+						<sixx.object sixx.id="73" sixx.name="infection" sixx.type="Drug" >
+							<sixx.object sixx.id="74" sixx.name="name" sixx.type="String" >Hashish</sixx.object>
+							<sixx.object sixx.id="75" sixx.name="type" sixx.type="String" >Plant</sixx.object>
+							<sixx.object sixx.name="infection" sixx.idref="25" />
+							<sixx.object sixx.name="produce" sixx.idref="17" />
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="76" sixx.type="Treatment" >
+						<sixx.object sixx.id="77" sixx.name="name" sixx.type="String" >Individual Counselling</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="73" />
+					</sixx.object>
+					<sixx.object sixx.id="78" sixx.type="Treatment" >
+						<sixx.object sixx.id="79" sixx.name="name" sixx.type="String" >Family Based Treatment</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="80" sixx.type="Treatment" >
+						<sixx.object sixx.id="81" sixx.name="name" sixx.type="String" >Motivational Enhancement Therapy</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="22" />
+					</sixx.object>
+					<sixx.object sixx.id="82" sixx.type="Treatment" >
+						<sixx.object sixx.id="83" sixx.name="name" sixx.type="String" >Rehabilitation</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="37" />
+					</sixx.object>
+					<sixx.object sixx.id="84" sixx.type="Treatment" >
+						<sixx.object sixx.id="85" sixx.name="name" sixx.type="String" >Narcotics Anonymous</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="86" sixx.type="Treatment" >
+						<sixx.object sixx.id="87" sixx.name="name" sixx.type="String" >Self-help</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="73" />
+					</sixx.object>
+					<sixx.object sixx.id="88" sixx.type="Treatment" >
+						<sixx.object sixx.id="89" sixx.name="name" sixx.type="String" >Detoxification</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="90" sixx.type="Treatment" >
+						<sixx.object sixx.id="91" sixx.name="name" sixx.type="String" >Nafazodone</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="22" />
+					</sixx.object>
+					<sixx.object sixx.id="92" sixx.type="Treatment" >
+						<sixx.object sixx.id="93" sixx.name="name" sixx.type="String" >Fluoxetine</sixx.object>
+						<sixx.object sixx.name="infection" sixx.idref="22" />
+					</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="94" sixx.type="Association" >
+				<sixx.object sixx.id="95" sixx.name="key" sixx.type="Symbol" >Formula</sixx.object>
+				<sixx.object sixx.id="96" sixx.name="value" sixx.type="Set" >
+					<sixx.object sixx.id="97" sixx.type="Chemical" >
+						<sixx.object sixx.id="98" sixx.name="molecular" sixx.type="String" >C21H30O2</sixx.object>
+						<sixx.object sixx.name="reaction" sixx.idref="22" />
+					</sixx.object>
+					<sixx.object sixx.id="99" sixx.type="Chemical" >
+						<sixx.object sixx.id="100" sixx.name="molecular" sixx.type="String" >C17H21NO4</sixx.object>
+						<sixx.object sixx.name="reaction" sixx.idref="37" />
+					</sixx.object>
+					<sixx.object sixx.id="101" sixx.type="Chemical" >
+						<sixx.object sixx.id="102" sixx.name="molecular" sixx.type="String" >C23H30N205</sixx.object>
+						<sixx.object sixx.name="reaction" sixx.idref="43" />
+					</sixx.object>
+					<sixx.object sixx.id="103" sixx.type="Chemical" >
+						<sixx.object sixx.id="104" sixx.name="molecular" sixx.type="String" >C21H23N05</sixx.object>
+						<sixx.object sixx.name="reaction" sixx.idref="11" />
+					</sixx.object>
+					<sixx.object sixx.id="105" sixx.type="Chemical" >
+						<sixx.object sixx.id="106" sixx.name="molecular" sixx.type="String" >C21H30O2</sixx.object>
+						<sixx.object sixx.name="reaction" sixx.idref="73" />
+					</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="107" sixx.type="Association" >
+				<sixx.object sixx.id="108" sixx.name="key" sixx.type="Symbol" >AllDrugs</sixx.object>
+				<sixx.object sixx.id="109" sixx.name="value" sixx.type="Set" >
+					<sixx.object sixx.idref="11" />
+					<sixx.object sixx.idref="73" />
+					<sixx.object sixx.idref="37" />
+					<sixx.object sixx.idref="22" />
+					<sixx.object sixx.idref="43" />
+				</sixx.object>
+			</sixx.object>
+		</sixx.object>
+		<sixx.object sixx.id="110" sixx.name="workspaceText" sixx.type="String" >AllInfections select: [:x | x name=&apos;Death&apos;]
+
+AllInfections select: [:x | x highInfected]
+AllInfections select: [:x | x lessInfected]
+AllInfections select: [:x | x mediumInfected]
+
+
+
+AllDrugs select: [:drug | drug type = &apos;Natural&apos;]
+AllDrugs select: [:drug | drug type = &apos;Plant&apos;]
+AllDrugs select: [:drug | drug type = &apos;Chemical&apos;]
+
+
+
+AllCountries select: [: x | x drugTrafficklingCountry]
+
+
+
+AllTreatments select: [:treat | treat familySupport]
+AllTreatments select: [:treat | treat mecicalCare]
+AllTreatments select: [:treat | treat selfHeal]
+
+
+Formula select: [:f | f herb]
+Formula select: [:f | f mostHarm]</sixx.object>
+		<sixx.object sixx.id="111" sixx.name="scriptText" sixx.type="String" >&quot;Note that variables begining with uppercase letter will be moved into the workspace pool.&quot;
+
+AllDrugs := Set new.
+AllInfections := Set new.
+AllTreatments := Set new.
+Formula := Set new.
+AllCountries := Set new.
+
+
+
+
+d1 := Drug new.
+d1 name: &apos;Hashish&apos;.
+d1 type: &apos;Plant&apos;.
+
+d2 := Drug new.
+d2 name: &apos;Cocaine&apos;.
+d2 type: &apos;Chemical&apos;.
+
+d3 := Drug new.
+d3 name: &apos;Heroin&apos;.
+d3 type: &apos;Chemical&apos;.
+
+d4 := Drug new.
+d4 name: &apos;Kratom&apos;.
+d4 type: &apos;Natural&apos;.
+
+d5 := Drug new.
+d5 name: &apos;Cannabis&apos;.
+d5 type: &apos;Natural&apos;.
+
+
+i1 := Infection new.
+i1 name: &apos;Sweating&apos;.
+i1 gender: &apos;Both MaleFemale&apos;.
+
+i2 := Infection new.
+i2 name: &apos;Loss of Consciousness&apos;.
+i2 gender: &apos;Both Male Female&apos;.
+
+i3 := Infection new.
+i3 name: &apos;Comma&apos;.
+i3 gender: &apos;Both Male Female&apos;.
+
+i4 := Infection new.
+i4 name: &apos;Nausea&apos;.
+i4 gender: &apos;Both Male Female&apos;.
+
+i5 := Infection new.
+i5 name: &apos;Hallucinations&apos;.
+i5 gender: &apos;Both Male Female&apos;.
+
+i6 := Infection new.
+i6 name: &apos;Cancer&apos;.
+i6 gender: &apos;Both Male Female&apos;.
+
+i7 := Infection new.
+i7 name: &apos;Intense Feeling&apos;.
+i7 gender: &apos;Both Male Female&apos;.
+
+i8 := Infection new.
+i8 name: &apos;Death&apos;.
+i8 gender: &apos;Both Male Female&apos;.
+
+i9 := Infection new.
+i9 name: &apos;Muscle Spasms&apos;.
+i9 gender: &apos;Both Male Female&apos;.
+
+i10 := Infection new.
+i10 name: &apos;Depression&apos;.
+i10 gender: &apos;Both Male Female&apos;.
+
+i11 := Infection new.
+i11 name: &apos;Breathing Problem&apos;.
+i11 gender: &apos;Both Male Female&apos;.
+
+i12 := Infection new.
+i12 name: &apos;Hepatitis&apos;.
+i12 gender: &apos;Both Male Female&apos;.
+
+i13 := Infection new.
+i13 name: &apos;Dizziness&apos;.
+i13 gender: &apos;Both Male Female&apos;.
+
+
+t1 := Treatment new.
+t1 name: &apos;Cognitive Behavioral Therapy&apos;.
+
+t2 := Treatment new.
+t2 name: &apos;Motivational Enhancement Therapy&apos;.
+
+t3 := Treatment new.
+t3 name: &apos;Family Based Treatment&apos;.
+
+t4 := Treatment new.
+t4 name: &apos;Nafazodone&apos;.
+
+t5 := Treatment new.
+t5 name: &apos;Fluoxetine&apos;.
+
+t6 := Treatment new.
+t6 name: &apos;Rehabilitation&apos;.
+
+t7 := Treatment new.
+t7 name: &apos;Detoxification&apos;.
+
+t8 := Treatment new.
+t8 name: &apos;Narcotics Anonymous&apos;.
+
+t9 := Treatment new.
+t9 name: &apos;Individual Counselling&apos;.
+
+t10 := Treatment new.
+t10 name: &apos;Self-help&apos;.
+
+
+
+c1 := Chemical new.
+c1 molecular: &apos;C21H30O2&apos;.
+
+c2 := Chemical new.
+c2 molecular: &apos;C17H21NO4&apos;.
+
+c3 := Chemical new.
+c3 molecular: &apos;C21H23N05&apos;.
+
+c4 := Chemical new.
+c4 molecular: &apos;C23H30N205&apos;.
+
+c5 := Chemical new.
+c5 molecular: &apos;C21H30O2&apos;.
+
+
+
+cu1 := Country new.
+cu1 name: &apos;Afghanistan&apos;.
+
+cu2 := Country new.
+cu2 name: &apos;Colombia&apos;.
+
+cu3 := Country new.
+cu3 name: &apos;Thailand&apos;.
+
+
+
+
+
+t1 infection: d5; infection: d1.
+t2 infection: d5.
+t3 infection: d5; infection: d1; infection: d3.
+t4 infection: d5.
+t5 infection: d5.
+t6 infection: d2.
+t7 infection: d2; infection: d3.
+t8 infection: d3.
+t9 infection: d1.
+t10 infection: d1.
+
+
+c1 reaction: d1.
+c2 reaction: d2.
+c3 reaction: d3.
+c4 reaction: d4.
+c5 reaction: d5.
+
+
+
+d3 infection: i3.
+d4 infection: i12.
+d5 infection: i10.
+d1 infection: i10.
+d2 infection: i4.
+
+
+
+i3 overdose: d1.
+i4 overdose: d4.
+i12 overdose: d4.
+i3 overdose: d3.
+i1 overdose: d3.
+i3 overdose: d3.
+i6 overdose: d3.
+i11 overdose: d3.
+i7 overdose: d3.
+i8 overdose: d2.
+i2 overdose: d5.
+
+
+d1 produce: cu1.
+d2 produce: cu2.
+d3 produce: cu1.
+d4 produce: cu3.
+d5 produce: cu1.
+
+
+
+AllDrugs add: d1.
+AllDrugs add: d2.
+AllDrugs add: d3.
+AllDrugs add: d4.
+AllDrugs add: d5.
+
+
+AllInfections add: i1.
+AllInfections add: i2.
+AllInfections add: i3.
+AllInfections add: i4.
+AllInfections add: i5.
+AllInfections add: i6.
+AllInfections add: i7.
+AllInfections add: i8.
+AllInfections add: i9.
+AllInfections add: i10.
+AllInfections add: i11.
+AllInfections add: i12.
+AllInfections add: i13.
+
+
+AllTreatments add: t1.
+AllTreatments add: t2.
+AllTreatments add: t3.
+AllTreatments add: t4.
+AllTreatments add: t5.
+AllTreatments add: t6.
+AllTreatments add: t7.
+AllTreatments add: t8.
+AllTreatments add: t9.
+AllTreatments add: t10.
+
+
+Formula add: c1.
+Formula add: c2.
+Formula add: c3.
+Formula add: c4.
+Formula add: c5.
+
+
+AllCountries add: cu1.
+AllCountries add: cu2.
+AllCountries add: cu3.</sixx.object>
+		<sixx.object sixx.id="112" sixx.name="messagesWithParMode" sixx.type="Symbol" >sendOnly</sixx.object>
+		<sixx.object sixx.id="113" sixx.name="messagesWithoutParMode" sixx.type="Symbol" >sendAndBrowse</sixx.object>
+		<sixx.object sixx.id="114" sixx.name="diagramSymbols" sixx.type="Set" >
+			<sixx.object sixx.id="115" sixx.type="DaskalosCollectionSymbol" >
+				<sixx.object sixx.name="subject" sixx.idref="70" />
+				<sixx.object sixx.id="116" sixx.name="position" sixx.type="Rectangle" >400@480 corner: 500@563</sixx.object>
+				<sixx.object sixx.id="117" sixx.name="name" sixx.type="String" >AllTreatments</sixx.object>
+				<sixx.object sixx.id="118" sixx.name="borderPoints" sixx.type="List" >
+					<sixx.object sixx.id="119" sixx.type="Point" >400@496</sixx.object>
+					<sixx.object sixx.id="120" sixx.type="Point" >450@480</sixx.object>
+					<sixx.object sixx.id="121" sixx.type="Point" >500@496</sixx.object>
+					<sixx.object sixx.id="122" sixx.type="Point" >500@547</sixx.object>
+					<sixx.object sixx.id="123" sixx.type="Point" >450@563</sixx.object>
+					<sixx.object sixx.id="124" sixx.type="Point" >400@547</sixx.object>
+					<sixx.object sixx.idref="119" />
+				</sixx.object>
+				<sixx.object sixx.id="125" sixx.name="innerRectangle" sixx.type="Rectangle" >401@497 corner: 499@546</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="126" sixx.type="DaskalosCollectionSymbol" >
+				<sixx.object sixx.name="subject" sixx.idref="67" />
+				<sixx.object sixx.id="127" sixx.name="position" sixx.type="Rectangle" >650@450 corner: 750@533</sixx.object>
+				<sixx.object sixx.id="128" sixx.name="name" sixx.type="String" >AllCountries</sixx.object>
+				<sixx.object sixx.id="129" sixx.name="borderPoints" sixx.type="List" >
+					<sixx.object sixx.id="130" sixx.type="Point" >650@466</sixx.object>
+					<sixx.object sixx.id="131" sixx.type="Point" >700@450</sixx.object>
+					<sixx.object sixx.id="132" sixx.type="Point" >750@466</sixx.object>
+					<sixx.object sixx.id="133" sixx.type="Point" >750@517</sixx.object>
+					<sixx.object sixx.id="134" sixx.type="Point" >700@533</sixx.object>
+					<sixx.object sixx.id="135" sixx.type="Point" >650@517</sixx.object>
+					<sixx.object sixx.idref="130" />
+				</sixx.object>
+				<sixx.object sixx.id="136" sixx.name="innerRectangle" sixx.type="Rectangle" >651@467 corner: 749@516</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="137" sixx.type="DaskalosClassSymbol" >
+				<sixx.object sixx.id="138" sixx.name="subject" sixx.type="Symbol" >Country</sixx.object>
+				<sixx.object sixx.id="139" sixx.name="position" sixx.type="Rectangle" >850@320 corner: 980@480</sixx.object>
+				<sixx.object sixx.id="140" sixx.name="methodsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="141" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="142" sixx.name="string" sixx.type="String" >drugTrafficklingCountry
+numCountries
+</sixx.object>
+						<sixx.object sixx.id="143" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="144" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.id="145" sixx.type="SmallInteger" >37</sixx.object>
+							</sixx.object>
+							<sixx.object sixx.id="146" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="147" sixx.name="compositionWidth" sixx.type="SmallInteger" >128</sixx.object>
+					<sixx.object sixx.id="148" sixx.name="compositionHeight" sixx.type="SmallInteger" >45</sixx.object>
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="149" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="150" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.id="151" sixx.type="SmallInteger" >1</sixx.object>
+							<sixx.object sixx.id="152" sixx.type="SmallInteger" >25</sixx.object>
+							<sixx.object sixx.id="153" sixx.type="SmallInteger" >38</sixx.object>
+						</sixx.object>
+						<sixx.object sixx.id="154" sixx.name="lastLine" sixx.type="SmallInteger" >2</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="155" sixx.name="instVarsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="156" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="157" sixx.name="string" sixx.type="String" >name </sixx.object>
+						<sixx.object sixx.id="158" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="159" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.id="160" sixx.type="SmallInteger" >5</sixx.object>
+							</sixx.object>
+							<sixx.object sixx.id="161" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="162" sixx.name="compositionWidth" sixx.type="SmallInteger" >33</sixx.object>
+					<sixx.object sixx.id="163" sixx.name="compositionHeight" sixx.type="SmallInteger" >15</sixx.object>
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="164" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="165" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.idref="151" />
+							<sixx.object sixx.id="166" sixx.type="SmallInteger" >6</sixx.object>
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+						<sixx.object sixx.name="lastLine" sixx.idref="151" />
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="167" sixx.name="compositionConnections" sixx.type="Set" ></sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="168" sixx.type="DaskalosCollectionSymbol" >
+				<sixx.object sixx.name="subject" sixx.idref="96" />
+				<sixx.object sixx.id="169" sixx.name="position" sixx.type="Rectangle" >960@110 corner: 1070@196</sixx.object>
+				<sixx.object sixx.id="170" sixx.name="name" sixx.type="String" >Formula</sixx.object>
+				<sixx.object sixx.id="171" sixx.name="borderPoints" sixx.type="List" >
+					<sixx.object sixx.id="172" sixx.type="Point" >960@128</sixx.object>
+					<sixx.object sixx.id="173" sixx.type="Point" >1015@110</sixx.object>
+					<sixx.object sixx.id="174" sixx.type="Point" >1070@128</sixx.object>
+					<sixx.object sixx.id="175" sixx.type="Point" >1070@178</sixx.object>
+					<sixx.object sixx.id="176" sixx.type="Point" >1015@196</sixx.object>
+					<sixx.object sixx.id="177" sixx.type="Point" >960@178</sixx.object>
+					<sixx.object sixx.idref="172" />
+				</sixx.object>
+				<sixx.object sixx.id="178" sixx.name="innerRectangle" sixx.type="Rectangle" >961@129 corner: 1069@177</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="179" sixx.type="DaskalosClassSymbol" >
+				<sixx.object sixx.id="180" sixx.name="subject" sixx.type="Symbol" >Treatment</sixx.object>
+				<sixx.object sixx.id="181" sixx.name="position" sixx.type="Rectangle" >220@480 corner: 320@590</sixx.object>
+				<sixx.object sixx.id="182" sixx.name="methodsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="183" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="184" sixx.name="string" sixx.type="String" >familySupport
+mecicalCare
+selfHeal
+</sixx.object>
+						<sixx.object sixx.id="185" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="186" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.id="187" sixx.type="SmallInteger" >35</sixx.object>
+							</sixx.object>
+							<sixx.object sixx.id="188" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="189" sixx.name="compositionWidth" sixx.type="SmallInteger" >75</sixx.object>
+					<sixx.object sixx.id="190" sixx.name="compositionHeight" sixx.type="SmallInteger" >60</sixx.object>
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="191" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="192" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.idref="151" />
+							<sixx.object sixx.idref="163" />
+							<sixx.object sixx.id="193" sixx.type="SmallInteger" >27</sixx.object>
+							<sixx.object sixx.id="194" sixx.type="SmallInteger" >36</sixx.object>
+							<sixx.object sixx.type="UndefinedObject" />
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+						<sixx.object sixx.id="195" sixx.name="lastLine" sixx.type="SmallInteger" >3</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="196" sixx.name="instVarsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="197" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="198" sixx.name="string" sixx.type="String" >name </sixx.object>
+						<sixx.object sixx.id="199" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="200" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.idref="160" />
+							</sixx.object>
+							<sixx.object sixx.id="201" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.name="compositionWidth" sixx.idref="162" />
+					<sixx.object sixx.name="compositionHeight" sixx.idref="163" />
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="202" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="203" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.idref="151" />
+							<sixx.object sixx.idref="166" />
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+						<sixx.object sixx.name="lastLine" sixx.idref="151" />
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="204" sixx.name="compositionConnections" sixx.type="Set" >
+					<sixx.object sixx.id="205" sixx.type="DaskalosCompositionConnection" >
+						<sixx.object sixx.name="fromSymbol" sixx.idref="179" />
+						<sixx.object sixx.id="206" sixx.name="toSymbol" sixx.type="DaskalosClassSymbol" >
+							<sixx.object sixx.id="207" sixx.name="subject" sixx.type="Symbol" >Drug</sixx.object>
+							<sixx.object sixx.id="208" sixx.name="position" sixx.type="Rectangle" >410@30 corner: 540@170</sixx.object>
+							<sixx.object sixx.id="209" sixx.name="methodsText" sixx.type="ComposedText" >
+								<sixx.object sixx.id="210" sixx.name="text" sixx.type="Text" >
+									<sixx.object sixx.id="211" sixx.name="string" sixx.type="String" >traffickling
+</sixx.object>
+									<sixx.object sixx.id="212" sixx.name="runs" sixx.type="RunArray" >
+										<sixx.object sixx.id="213" sixx.name="runs" sixx.type="Array" >
+											<sixx.object sixx.id="214" sixx.type="SmallInteger" >13</sixx.object>
+										</sixx.object>
+										<sixx.object sixx.id="215" sixx.name="values" sixx.type="Array" >
+											<sixx.object sixx.type="UndefinedObject" />
+										</sixx.object>
+									</sixx.object>
+								</sixx.object>
+								<sixx.object sixx.id="216" sixx.name="compositionWidth" sixx.type="SmallInteger" >57</sixx.object>
+								<sixx.object sixx.id="217" sixx.name="compositionHeight" sixx.type="SmallInteger" >30</sixx.object>
+								<sixx.object sixx.name="wordWrap" sixx.type="True" />
+								<sixx.object sixx.id="218" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+									<sixx.object sixx.id="219" sixx.name="lines" sixx.type="Array" >
+										<sixx.object sixx.idref="151" />
+										<sixx.object sixx.id="220" sixx.type="SmallInteger" >14</sixx.object>
+										<sixx.object sixx.type="UndefinedObject" />
+									</sixx.object>
+									<sixx.object sixx.name="lastLine" sixx.idref="151" />
+								</sixx.object>
+								<sixx.object sixx.name="fitWidth" sixx.type="True" />
+							</sixx.object>
+							<sixx.object sixx.id="221" sixx.name="instVarsText" sixx.type="ComposedText" >
+								<sixx.object sixx.id="222" sixx.name="text" sixx.type="Text" >
+									<sixx.object sixx.id="223" sixx.name="string" sixx.type="String" >name
+type </sixx.object>
+									<sixx.object sixx.id="224" sixx.name="runs" sixx.type="RunArray" >
+										<sixx.object sixx.id="225" sixx.name="runs" sixx.type="Array" >
+											<sixx.object sixx.id="226" sixx.type="SmallInteger" >10</sixx.object>
+										</sixx.object>
+										<sixx.object sixx.id="227" sixx.name="values" sixx.type="Array" >
+											<sixx.object sixx.type="UndefinedObject" />
+										</sixx.object>
+									</sixx.object>
+								</sixx.object>
+								<sixx.object sixx.name="compositionWidth" sixx.idref="217" />
+								<sixx.object sixx.name="compositionHeight" sixx.idref="217" />
+								<sixx.object sixx.name="wordWrap" sixx.type="True" />
+								<sixx.object sixx.id="228" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+									<sixx.object sixx.id="229" sixx.name="lines" sixx.type="Array" >
+										<sixx.object sixx.idref="151" />
+										<sixx.object sixx.idref="166" />
+										<sixx.object sixx.id="230" sixx.type="SmallInteger" >11</sixx.object>
+										<sixx.object sixx.type="UndefinedObject" />
+										<sixx.object sixx.type="UndefinedObject" />
+									</sixx.object>
+									<sixx.object sixx.name="lastLine" sixx.idref="154" />
+								</sixx.object>
+								<sixx.object sixx.name="fitWidth" sixx.type="True" />
+							</sixx.object>
+							<sixx.object sixx.id="231" sixx.name="compositionConnections" sixx.type="Set" >
+								<sixx.object sixx.id="232" sixx.type="DaskalosCompositionConnection" >
+									<sixx.object sixx.name="fromSymbol" sixx.idref="206" />
+									<sixx.object sixx.id="233" sixx.name="toSymbol" sixx.type="DaskalosClassSymbol" >
+										<sixx.object sixx.id="234" sixx.name="subject" sixx.type="Symbol" >Infection</sixx.object>
+										<sixx.object sixx.id="235" sixx.name="position" sixx.type="Rectangle" >40@30 corner: 180@180</sixx.object>
+										<sixx.object sixx.id="236" sixx.name="methodsText" sixx.type="ComposedText" >
+											<sixx.object sixx.id="237" sixx.name="text" sixx.type="Text" >
+												<sixx.object sixx.id="238" sixx.name="string" sixx.type="String" >highInfected
+lessInfected
+mediumInfected
+</sixx.object>
+												<sixx.object sixx.id="239" sixx.name="runs" sixx.type="RunArray" >
+													<sixx.object sixx.id="240" sixx.name="runs" sixx.type="Array" >
+														<sixx.object sixx.id="241" sixx.type="SmallInteger" >41</sixx.object>
+													</sixx.object>
+													<sixx.object sixx.id="242" sixx.name="values" sixx.type="Array" >
+														<sixx.object sixx.type="UndefinedObject" />
+													</sixx.object>
+												</sixx.object>
+											</sixx.object>
+											<sixx.object sixx.id="243" sixx.name="compositionWidth" sixx.type="SmallInteger" >88</sixx.object>
+											<sixx.object sixx.name="compositionHeight" sixx.idref="190" />
+											<sixx.object sixx.name="wordWrap" sixx.type="True" />
+											<sixx.object sixx.id="244" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+												<sixx.object sixx.id="245" sixx.name="lines" sixx.type="Array" >
+													<sixx.object sixx.idref="151" />
+													<sixx.object sixx.idref="220" />
+													<sixx.object sixx.idref="193" />
+													<sixx.object sixx.id="246" sixx.type="SmallInteger" >42</sixx.object>
+													<sixx.object sixx.type="UndefinedObject" />
+													<sixx.object sixx.type="UndefinedObject" />
+													<sixx.object sixx.type="UndefinedObject" />
+												</sixx.object>
+												<sixx.object sixx.name="lastLine" sixx.idref="195" />
+											</sixx.object>
+											<sixx.object sixx.name="fitWidth" sixx.type="True" />
+										</sixx.object>
+										<sixx.object sixx.id="247" sixx.name="instVarsText" sixx.type="ComposedText" >
+											<sixx.object sixx.id="248" sixx.name="text" sixx.type="Text" >
+												<sixx.object sixx.id="249" sixx.name="string" sixx.type="String" >name
+gender </sixx.object>
+												<sixx.object sixx.id="250" sixx.name="runs" sixx.type="RunArray" >
+													<sixx.object sixx.id="251" sixx.name="runs" sixx.type="Array" >
+														<sixx.object sixx.id="252" sixx.type="SmallInteger" >12</sixx.object>
+													</sixx.object>
+													<sixx.object sixx.id="253" sixx.name="values" sixx.type="Array" >
+														<sixx.object sixx.type="UndefinedObject" />
+													</sixx.object>
+												</sixx.object>
+											</sixx.object>
+											<sixx.object sixx.id="254" sixx.name="compositionWidth" sixx.type="SmallInteger" >40</sixx.object>
+											<sixx.object sixx.name="compositionHeight" sixx.idref="217" />
+											<sixx.object sixx.name="wordWrap" sixx.type="True" />
+											<sixx.object sixx.id="255" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+												<sixx.object sixx.id="256" sixx.name="lines" sixx.type="Array" >
+													<sixx.object sixx.idref="151" />
+													<sixx.object sixx.idref="166" />
+													<sixx.object sixx.idref="214" />
+													<sixx.object sixx.type="UndefinedObject" />
+													<sixx.object sixx.type="UndefinedObject" />
+												</sixx.object>
+												<sixx.object sixx.name="lastLine" sixx.idref="154" />
+											</sixx.object>
+											<sixx.object sixx.name="fitWidth" sixx.type="True" />
+										</sixx.object>
+										<sixx.object sixx.id="257" sixx.name="compositionConnections" sixx.type="Set" >
+											<sixx.object sixx.id="258" sixx.type="DaskalosCompositionConnection" >
+												<sixx.object sixx.name="fromSymbol" sixx.idref="233" />
+												<sixx.object sixx.name="toSymbol" sixx.idref="206" />
+												<sixx.object sixx.id="259" sixx.name="name" sixx.type="String" >overdose</sixx.object>
+												<sixx.object sixx.id="260" sixx.name="cardinality" sixx.type="String" ></sixx.object>
+												<sixx.object sixx.id="261" sixx.name="stereotype" sixx.type="String" ></sixx.object>
+												<sixx.object sixx.id="262" sixx.name="controlPoints" sixx.type="List" >
+													<sixx.object sixx.type="UndefinedObject" />
+												</sixx.object>
+											</sixx.object>
+										</sixx.object>
+									</sixx.object>
+									<sixx.object sixx.id="263" sixx.name="name" sixx.type="String" >infection</sixx.object>
+									<sixx.object sixx.name="cardinality" sixx.idref="260" />
+									<sixx.object sixx.name="stereotype" sixx.idref="261" />
+									<sixx.object sixx.id="264" sixx.name="controlPoints" sixx.type="List" >
+										<sixx.object sixx.type="UndefinedObject" />
+									</sixx.object>
+								</sixx.object>
+								<sixx.object sixx.id="265" sixx.type="DaskalosCompositionConnection" >
+									<sixx.object sixx.name="fromSymbol" sixx.idref="206" />
+									<sixx.object sixx.name="toSymbol" sixx.idref="137" />
+									<sixx.object sixx.id="266" sixx.name="name" sixx.type="String" >produce</sixx.object>
+									<sixx.object sixx.name="cardinality" sixx.idref="260" />
+									<sixx.object sixx.name="stereotype" sixx.idref="261" />
+									<sixx.object sixx.id="267" sixx.name="controlPoints" sixx.type="List" >
+										<sixx.object sixx.type="UndefinedObject" />
+									</sixx.object>
+								</sixx.object>
+							</sixx.object>
+						</sixx.object>
+						<sixx.object sixx.id="268" sixx.name="name" sixx.type="String" >infection</sixx.object>
+						<sixx.object sixx.name="cardinality" sixx.idref="260" />
+						<sixx.object sixx.name="stereotype" sixx.idref="261" />
+						<sixx.object sixx.id="269" sixx.name="controlPoints" sixx.type="List" >
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+					</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="270" sixx.type="DaskalosCollectionSymbol" >
+				<sixx.object sixx.name="subject" sixx.idref="7" />
+				<sixx.object sixx.id="271" sixx.name="position" sixx.type="Rectangle" >170@240 corner: 270@323</sixx.object>
+				<sixx.object sixx.id="272" sixx.name="name" sixx.type="String" >AllInfections</sixx.object>
+				<sixx.object sixx.id="273" sixx.name="borderPoints" sixx.type="List" >
+					<sixx.object sixx.id="274" sixx.type="Point" >170@256</sixx.object>
+					<sixx.object sixx.id="275" sixx.type="Point" >220@240</sixx.object>
+					<sixx.object sixx.id="276" sixx.type="Point" >270@256</sixx.object>
+					<sixx.object sixx.id="277" sixx.type="Point" >270@307</sixx.object>
+					<sixx.object sixx.id="278" sixx.type="Point" >220@323</sixx.object>
+					<sixx.object sixx.id="279" sixx.type="Point" >170@307</sixx.object>
+					<sixx.object sixx.idref="274" />
+				</sixx.object>
+				<sixx.object sixx.id="280" sixx.name="innerRectangle" sixx.type="Rectangle" >171@257 corner: 269@306</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.idref="206" />
+			<sixx.object sixx.idref="233" />
+			<sixx.object sixx.id="281" sixx.type="DaskalosCollectionSymbol" >
+				<sixx.object sixx.name="subject" sixx.idref="109" />
+				<sixx.object sixx.id="282" sixx.name="position" sixx.type="Rectangle" >430@290 corner: 530@373</sixx.object>
+				<sixx.object sixx.id="283" sixx.name="name" sixx.type="String" >AllDrugs</sixx.object>
+				<sixx.object sixx.id="284" sixx.name="borderPoints" sixx.type="List" >
+					<sixx.object sixx.id="285" sixx.type="Point" >430@306</sixx.object>
+					<sixx.object sixx.id="286" sixx.type="Point" >480@290</sixx.object>
+					<sixx.object sixx.id="287" sixx.type="Point" >530@306</sixx.object>
+					<sixx.object sixx.id="288" sixx.type="Point" >530@357</sixx.object>
+					<sixx.object sixx.id="289" sixx.type="Point" >480@373</sixx.object>
+					<sixx.object sixx.id="290" sixx.type="Point" >430@357</sixx.object>
+					<sixx.object sixx.idref="285" />
+				</sixx.object>
+				<sixx.object sixx.id="291" sixx.name="innerRectangle" sixx.type="Rectangle" >431@307 corner: 529@356</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="292" sixx.type="DaskalosClassSymbol" >
+				<sixx.object sixx.id="293" sixx.name="subject" sixx.type="Symbol" >Chemical</sixx.object>
+				<sixx.object sixx.id="294" sixx.name="position" sixx.type="Rectangle" >740@90 corner: 860@240</sixx.object>
+				<sixx.object sixx.id="295" sixx.name="methodsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="296" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="297" sixx.name="string" sixx.type="String" >herb
+mostHarm
+</sixx.object>
+						<sixx.object sixx.id="298" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="299" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.idref="220" />
+							</sixx.object>
+							<sixx.object sixx.id="300" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.name="compositionWidth" sixx.idref="216" />
+					<sixx.object sixx.name="compositionHeight" sixx.idref="148" />
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="301" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="302" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.idref="151" />
+							<sixx.object sixx.idref="166" />
+							<sixx.object sixx.idref="163" />
+							<sixx.object sixx.type="UndefinedObject" />
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+						<sixx.object sixx.name="lastLine" sixx.idref="154" />
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="303" sixx.name="instVarsText" sixx.type="ComposedText" >
+					<sixx.object sixx.id="304" sixx.name="text" sixx.type="Text" >
+						<sixx.object sixx.id="305" sixx.name="string" sixx.type="String" >molecular </sixx.object>
+						<sixx.object sixx.id="306" sixx.name="runs" sixx.type="RunArray" >
+							<sixx.object sixx.id="307" sixx.name="runs" sixx.type="Array" >
+								<sixx.object sixx.idref="226" />
+							</sixx.object>
+							<sixx.object sixx.id="308" sixx.name="values" sixx.type="Array" >
+								<sixx.object sixx.type="UndefinedObject" />
+							</sixx.object>
+						</sixx.object>
+					</sixx.object>
+					<sixx.object sixx.id="309" sixx.name="compositionWidth" sixx.type="SmallInteger" >56</sixx.object>
+					<sixx.object sixx.name="compositionHeight" sixx.idref="163" />
+					<sixx.object sixx.name="wordWrap" sixx.type="True" />
+					<sixx.object sixx.id="310" sixx.name="lineTable" sixx.type="OptimizedLineInformationTable" >
+						<sixx.object sixx.id="311" sixx.name="lines" sixx.type="Array" >
+							<sixx.object sixx.idref="151" />
+							<sixx.object sixx.idref="230" />
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+						<sixx.object sixx.name="lastLine" sixx.idref="151" />
+					</sixx.object>
+					<sixx.object sixx.name="fitWidth" sixx.type="True" />
+				</sixx.object>
+				<sixx.object sixx.id="312" sixx.name="compositionConnections" sixx.type="Set" >
+					<sixx.object sixx.id="313" sixx.type="DaskalosCompositionConnection" >
+						<sixx.object sixx.name="fromSymbol" sixx.idref="292" />
+						<sixx.object sixx.name="toSymbol" sixx.idref="206" />
+						<sixx.object sixx.id="314" sixx.name="name" sixx.type="String" >reaction</sixx.object>
+						<sixx.object sixx.name="cardinality" sixx.idref="260" />
+						<sixx.object sixx.name="stereotype" sixx.idref="261" />
+						<sixx.object sixx.id="315" sixx.name="controlPoints" sixx.type="List" >
+							<sixx.object sixx.type="UndefinedObject" />
+						</sixx.object>
+					</sixx.object>
+				</sixx.object>
+			</sixx.object>
+		</sixx.object>
+		<sixx.object sixx.id="316" sixx.name="diagramConnections" sixx.type="Set" >
+			<sixx.object sixx.id="317" sixx.type="DaskalosElementConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="137" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="126" />
+			</sixx.object>
+			<sixx.object sixx.id="318" sixx.type="DaskalosCompositionConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="206" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="137" />
+				<sixx.object sixx.id="319" sixx.name="name" sixx.type="String" >produce</sixx.object>
+				<sixx.object sixx.name="cardinality" sixx.idref="260" />
+				<sixx.object sixx.name="stereotype" sixx.idref="261" />
+				<sixx.object sixx.id="320" sixx.name="fromPoint" sixx.type="Point" >540@(3175 / 22)</sixx.object>
+				<sixx.object sixx.id="321" sixx.name="toPoint" sixx.type="Point" >850@(7825 / 22)</sixx.object>
+				<sixx.object sixx.id="322" sixx.name="controlPoints" sixx.type="List" >
+					<sixx.object sixx.id="323" sixx.type="Point" >695@250</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="324" sixx.type="DaskalosElementConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="206" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="281" />
+			</sixx.object>
+			<sixx.object sixx.id="325" sixx.type="DaskalosCompositionConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="233" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="206" />
+				<sixx.object sixx.id="326" sixx.name="name" sixx.type="String" >overdose</sixx.object>
+				<sixx.object sixx.name="cardinality" sixx.idref="260" />
+				<sixx.object sixx.name="stereotype" sixx.idref="261" />
+				<sixx.object sixx.id="327" sixx.name="fromPoint" sixx.type="Point" >180@150</sixx.object>
+				<sixx.object sixx.id="328" sixx.name="toPoint" sixx.type="Point" >410@150</sixx.object>
+				<sixx.object sixx.id="329" sixx.name="controlPoints" sixx.type="List" >
+					<sixx.object sixx.id="330" sixx.type="Point" >240@150</sixx.object>
+					<sixx.object sixx.id="331" sixx.type="Point" >300@150</sixx.object>
+					<sixx.object sixx.id="332" sixx.type="Point" >355@150</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="333" sixx.type="DaskalosCompositionConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="292" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="206" />
+				<sixx.object sixx.id="334" sixx.name="name" sixx.type="String" >reaction</sixx.object>
+				<sixx.object sixx.name="cardinality" sixx.idref="260" />
+				<sixx.object sixx.name="stereotype" sixx.idref="261" />
+				<sixx.object sixx.id="335" sixx.name="fromPoint" sixx.type="Point" >740@120</sixx.object>
+				<sixx.object sixx.id="336" sixx.name="toPoint" sixx.type="Point" >540@120</sixx.object>
+				<sixx.object sixx.id="337" sixx.name="controlPoints" sixx.type="List" >
+					<sixx.object sixx.id="338" sixx.type="Point" >690@120</sixx.object>
+					<sixx.object sixx.id="339" sixx.type="Point" >640@120</sixx.object>
+					<sixx.object sixx.id="340" sixx.type="Point" >590@120</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="341" sixx.type="DaskalosCompositionConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="206" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="233" />
+				<sixx.object sixx.id="342" sixx.name="name" sixx.type="String" >infection</sixx.object>
+				<sixx.object sixx.name="cardinality" sixx.idref="260" />
+				<sixx.object sixx.name="stereotype" sixx.idref="261" />
+				<sixx.object sixx.id="343" sixx.name="fromPoint" sixx.type="Point" >410@80</sixx.object>
+				<sixx.object sixx.id="344" sixx.name="toPoint" sixx.type="Point" >180@80</sixx.object>
+				<sixx.object sixx.id="345" sixx.name="controlPoints" sixx.type="List" >
+					<sixx.object sixx.id="346" sixx.type="Point" >350@80</sixx.object>
+					<sixx.object sixx.id="347" sixx.type="Point" >290@80</sixx.object>
+					<sixx.object sixx.id="348" sixx.type="Point" >235@80</sixx.object>
+				</sixx.object>
+			</sixx.object>
+			<sixx.object sixx.id="349" sixx.type="DaskalosElementConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="233" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="270" />
+			</sixx.object>
+			<sixx.object sixx.id="350" sixx.type="DaskalosElementConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="179" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="115" />
+			</sixx.object>
+			<sixx.object sixx.id="351" sixx.type="DaskalosElementConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="292" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="168" />
+			</sixx.object>
+			<sixx.object sixx.id="352" sixx.type="DaskalosCompositionConnection" >
+				<sixx.object sixx.name="fromSymbol" sixx.idref="179" />
+				<sixx.object sixx.name="toSymbol" sixx.idref="206" />
+				<sixx.object sixx.id="353" sixx.name="name" sixx.type="String" >infection</sixx.object>
+				<sixx.object sixx.name="cardinality" sixx.idref="260" />
+				<sixx.object sixx.name="stereotype" sixx.idref="261" />
+				<sixx.object sixx.id="354" sixx.name="fromPoint" sixx.type="Point" >(14970 / 53)@480</sixx.object>
+				<sixx.object sixx.id="355" sixx.name="toPoint" sixx.type="Point" >(7060 / 17)@170</sixx.object>
+				<sixx.object sixx.id="356" sixx.name="controlPoints" sixx.type="List" >
+					<sixx.object sixx.id="357" sixx.type="Point" >(16230 / 53)@375</sixx.object>
+					<sixx.object sixx.id="358" sixx.type="Point" >330@270</sixx.object>
+					<sixx.object sixx.id="359" sixx.type="Point" >(6335 / 17)@220</sixx.object>
+				</sixx.object>
+			</sixx.object>
+		</sixx.object>
+	</sixx.object>
+</sixx>
